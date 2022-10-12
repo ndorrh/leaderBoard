@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leader board</title>
-</head>
-<body>
-  <main class="main-wrapper">
-    <h1 class="heading">Leaderboard</h1>
-    <section class="playerScores">
-      <div class="recent_score_wrapper"><h2 class="recentScore">Recent Scores</h2> <button class="RefreshBtn" type="button">refresh</button></div>
-      <ul class="player-score-wrapper"></ul>
-    </section>
-
-    <section class="add-score">
-      <h2 class="Add-score">Add your Score</h2>
-      <form action="">
-        <label for="name">
-        <input type="text" required placeholder="Your name" id="name">
-        </label><br>
-        <label for="score">
-        <input type="number" required placeholder="Your Score" id="score">
-        </label><br>
-        <button type="submit">Summit</button>
-      </form>
-    </section>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="headers">
+        <h1>Leaderboard</h1>
+      </div>
+      <div class="container">
+        <div class="recent-scores">
+          <div class="header">
+            <h2>Recent Scores</h2>
+            <button type="button">Refresh</button>
+          </div>
+          <div class="scores">
+            <table class="score-table">
+              <thead>
+                <th>Rank</th>
+                <th>User</th>
+                <th>Points</th>
+              </thead>
+              <tbody class="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="add-scores">
+          <div class="heading">
+            <h2>Add your Score</h2>
+          </div>
+          <form class="input-form">
+            <input type="text" placeholder="Your name" class="input" /> <br />
+            <input type="number" placeholder="Your Score" class="input" />
+            <br />
+            <div class="submit">
+              <button type="button" class="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
