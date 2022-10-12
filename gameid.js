@@ -1,13 +1,10 @@
-/* fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
-
-Adding method type
-method: 'POST',
+fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+  method: 'POST',
   headers: {
-  'Content-Type': 'application/json',
+    'Content-Type': 'application/json',
   },
-Adding body or contents to send
-body: JSON.stringify({
-  name: 'oswald',
-}),
+  body: JSON.stringify({
+    name: 'oswald',
+  }),
 }).then((good) => good.json()).then((err) => console.log(err));
-console.log('rest'); */
+console.log('rest');
