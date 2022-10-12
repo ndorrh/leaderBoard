@@ -2,7 +2,7 @@ const users = [
   {
     id: 1,
     name: 'Player 1',
-    score: 500,
+    score: 570,
   },
 
   {
