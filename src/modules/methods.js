@@ -1,7 +1,7 @@
 import { render, tbody } from './scores.js';
 
 const getData = async () => {
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zqQdEh1Lbzb3JMhufc0y/scores')
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/FEXtwxR2o0DuBnnmH5XG/scores')
     .then((rawData) => {
       if (!rawData.ok) {
         throw new Error('Network response was not OK');
@@ -26,7 +26,7 @@ const sendData = async () => {
     score: playerScore.value,
   };
 
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zqQdEh1Lbzb3JMhufc0y/scores', {
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/FEXtwxR2o0DuBnnmH5XG/scores', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
