@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .headers {
+  margin: 15px;
+}
+
+.main-container .container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container .container .recent-scores {
+  width: 45%;
+}
+
+.main-container .container .recent-scores .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-container .container .recent-scores .header button {
+  height: 20px;
+  border: solid 2px;
+}
+
+.main-container .container .recent-scores .scores {
+  text-align: center;
+}
+
+.main-container .container .recent-scores .scores .score-table {
+  width: 98%;
+  margin: auto;
+}
+
+.main-container .container .add-scores {
+  width: 45%;
+}
+
+.main-container .container .add-scores .heading {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-container .container .add-scores .input-form {
+  width: 100%;
+}
+
+.main-container .container .add-scores .input-form .input {
+  width: 80%;
+  margin: 10px auto;
+  height: 30px;
+}
+
+.main-container .container .add-scores .input-form .submit {
+  width: 80%;
+  text-align: end;
+}
+
+.main-container .container .add-scores .input-form .submit .submit-btn {
+  width: 30%;
+  margin-left: auto;
+  border: solid 2px;
+}
