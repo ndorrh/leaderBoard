@@ -1,6 +1,17 @@
 import './style.css';
+import { sendData, getData } from './modules/methods.js';
 
-import { render } from './modules/scores.js';
+const addScoreBtn = document.getElementById('submit-btn');
+const refreshBtn = document.getElementById('refresh');
 
-const tbody = document.querySelector('.tbody');
-tbody.innerHTML = render();
+addScoreBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  sendData();
+  getData();
+});
+
+refreshBtn.addEventListener('click', () => {
+  getData();
+});
+
+getData();

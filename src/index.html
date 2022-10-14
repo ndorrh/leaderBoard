@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-    <script src="gameid.js"></script>
   </head>
   <body>
     <div class="main-container">
@@ -16,7 +15,7 @@
         <div class="recent-scores">
           <div class="header">
             <h2>Recent Scores</h2>
-            <button type="button">Refresh</button>
+            <button type="button" id="refresh">Refresh</button>
           </div>
           <div class="scores">
             <table class="score-table">
@@ -33,12 +32,23 @@
           <div class="heading">
             <h2>Add your Score</h2>
           </div>
-          <form class="input-form">
-            <input type="text" placeholder="Your name" class="input" /> <br />
-            <input type="number" placeholder="Your Score" class="input" />
+          <form class="input-form" novalidate>
+            <input
+              type="text"
+              placeholder="Your name"
+              class="input"
+              id="name"
+            />
+            <br />
+            <input
+              type="number"
+              placeholder="Your Score"
+              class="input"
+              id="score"
+            />
             <br />
             <div class="submit">
-              <button type="button" class="submit-btn">Submit</button>
+              <button type="button" id="submit-btn">Submit</button>
             </div>
           </form>
         </div>
