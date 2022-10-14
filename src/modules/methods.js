@@ -22,7 +22,7 @@ const sendData = async () => {
   const playerName = document.getElementById('name');
   const playerScore = document.getElementById('score');
   const data = {
-    user: `${playerName.value}`,
+    user: playerName.value,
     score: playerScore.value,
   };
 
