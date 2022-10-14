@@ -11,7 +11,7 @@ const getData = async () => {
       }
     })
     .then((playerData) => {
-      tbody.innerHTML = render(playerData.result);
+      tbody.innerHTML = render(playerData.result.sort((a, b) => b.score - a.score));
     })
     .catch((error) => {
       console.error('There has been a problem with your fetch operation:', error);
