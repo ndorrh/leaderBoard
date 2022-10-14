@@ -12,7 +12,7 @@
 - Webpack
 
 ## Live Demo
-[Not available yet but checkout this cool GIF](https://giphy.com/clips/hamlet-jJjb9AUHOiP3nJJMdy)
+[Not available yet but checkout this cool GIF](https://ndorrh.github.io/leaderBoard/)
 
 
 ## Getting Started
