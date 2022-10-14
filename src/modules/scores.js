@@ -1,15 +1,25 @@
 const tbody = document.querySelector('.tbody');
-const render = (user) => {
+const tableOfScore = (arrOfScores, index, className) => {
   let tdata = '';
-  user.forEach((player, index) => {
-    tdata += `
-                <tr>
-                 <td>${index}:</td>
-                  <td>${user[index].user}:</td>
-                  <td>${user[index].score}</td>
+  tdata = `
+                <tr class =${className}>
+                 <td>${index + 1}</td>
+                  <td>${arrOfScores[index].user}</td>
+                  <td>${arrOfScores[index].score}</td>
                 </tr>`;
-  });
   return tdata;
+};
+const render = (user) => {
+  let score = '';
+  user.forEach((player, index) => {
+    if (index % 2 === 0) {
+      score += tableOfScore(user, index, 'bg-white');
+    } else {
+      score += tableOfScore(user, index, 'bg-grey');
+    }
+  });
+
+  return score;
 };
 
 export { render, tbody };
